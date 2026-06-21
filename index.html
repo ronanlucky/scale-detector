@@ -175,7 +175,8 @@
     <p>Drop any audio file and get the musical key, scale, chromagram, and relative key — powered by the Krumhansl-Schmuckler algorithm and Web Audio API.</p>
     <div class="hero-btns">
       <a href="#try" class="btn-primary">Try it free →</a>
-      <a href="https://github.com/ronanlucky/agentic-soc-sentinel" target="_blank" class="btn-secondary">View GitHub</a>
+      <a href="#youtube" class="btn-secondary">▶ YouTube support</a>
+      <a href="https://github.com/ronanlucky/scale-detector" target="_blank" class="btn-secondary">GitHub</a>
     </div>
   </div>
 
@@ -228,7 +229,62 @@
     </div>
   </div>
 
-  <!-- FEATURES -->
+  <!-- YOUTUBE SECTION -->
+  <div id="youtube" style="padding:4rem 0;">
+    <div style="background:linear-gradient(135deg,rgba(124,58,237,0.12),rgba(14,165,233,0.12));border:1px solid rgba(167,139,250,0.25);border-radius:24px;padding:3rem 2rem;text-align:center;">
+      <div style="font-size:40px;margin-bottom:1rem;">▶</div>
+      <h2 style="font-size:clamp(24px,4vw,36px);font-weight:800;letter-spacing:-0.5px;margin-bottom:0.75rem;">Analyze any YouTube song</h2>
+      <p style="font-size:16px;color:#6b6b80;max-width:480px;margin:0 auto 2rem;line-height:1.7;">Paste a YouTube URL — the companion server downloads the audio, detects the key, and lets you pitch-shift it in real time.</p>
+
+      <!-- Mock YouTube input -->
+      <div style="background:rgba(0,0,0,0.3);border:1px solid rgba(255,255,255,0.08);border-radius:14px;padding:1rem;max-width:520px;margin:0 auto 1.5rem;">
+        <div style="display:flex;gap:8px;">
+          <div style="flex:1;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:10px 14px;font-size:14px;color:#555570;text-align:left;">https://youtube.com/watch?v=...</div>
+          <div style="padding:10px 18px;border-radius:10px;background:linear-gradient(135deg,#7c3aed,#0ea5e9);color:#fff;font-size:14px;font-weight:600;white-space:nowrap;">Download &amp; Analyze</div>
+        </div>
+        <div style="margin-top:10px;height:5px;background:rgba(255,255,255,0.07);border-radius:3px;overflow:hidden;">
+          <div style="height:100%;width:72%;background:linear-gradient(90deg,#7c3aed,#0ea5e9,#f472b6);border-radius:3px;background-size:200% 100%;animation:shimmer 2s linear infinite;"></div>
+        </div>
+        <div style="font-size:12px;color:#6b6b80;margin-top:6px;text-align:left;">Downloading audio... 72%</div>
+      </div>
+
+      <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:2rem;">
+        <span style="padding:5px 14px;border-radius:20px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.08);font-size:12px;color:#8888aa;">yt-dlp</span>
+        <span style="padding:5px 14px;border-radius:20px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.08);font-size:12px;color:#8888aa;">ffmpeg</span>
+        <span style="padding:5px 14px;border-radius:20px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.08);font-size:12px;color:#8888aa;">librosa pitch shift</span>
+        <span style="padding:5px 14px;border-radius:20px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.08);font-size:12px;color:#8888aa;">Python server</span>
+      </div>
+
+      <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;align-items:center;">
+        <a href="#download" class="btn-primary">⬇ Download full version</a>
+        <span style="font-size:13px;color:#555570;">Requires Python 3.10+ · runs locally</span>
+      </div>
+
+      <!-- Steps -->
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-top:2.5rem;text-align:left;">
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:1rem;">
+          <div style="font-size:20px;margin-bottom:8px;">1️⃣</div>
+          <div style="font-size:13px;font-weight:600;margin-bottom:4px;">Run the server</div>
+          <code style="font-size:12px;color:#a78bfa;">python server.py</code>
+        </div>
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:1rem;">
+          <div style="font-size:20px;margin-bottom:8px;">2️⃣</div>
+          <div style="font-size:13px;font-weight:600;margin-bottom:4px;">Paste a YouTube URL</div>
+          <div style="font-size:12px;color:#6b6b80;">Any song, any length</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:1rem;">
+          <div style="font-size:20px;margin-bottom:8px;">3️⃣</div>
+          <div style="font-size:13px;font-weight:600;margin-bottom:4px;">Get the key</div>
+          <div style="font-size:12px;color:#6b6b80;">Key, scale, chromagram</div>
+        </div>
+        <div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:12px;padding:1rem;">
+          <div style="font-size:20px;margin-bottom:8px;">4️⃣</div>
+          <div style="font-size:13px;font-weight:600;margin-bottom:4px;">Pitch shift</div>
+          <div style="font-size:12px;color:#6b6b80;">+/− semitones, audio actually shifts</div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="features" id="features">
     <p class="section-label">What it does</p>
     <h2 class="section-title">Everything you need to analyse a song</h2>
