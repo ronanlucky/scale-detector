@@ -2,7 +2,7 @@
 
 **Drop a song. Get the key. Shift the pitch.**
 
-[**→ Try it live**](https://ronanlucky.github.io/scale-detector) &nbsp;|&nbsp; [Download full version](https://ronanlucky.github.io/scale-detector/scale-detector.html) &nbsp;|&nbsp; [server.py](https://ronanlucky.github.io/scale-detector/server.py)
+[**→ Try it live**](https://ronankongala.github.io/scale-detector) &nbsp;|&nbsp; [Download full version](https://ronankongala.github.io/scale-detector/scale-detector.html) &nbsp;|&nbsp; [server.py](https://ronankongala.github.io/scale-detector/server.py)
 
 ---
 
@@ -25,14 +25,14 @@ C   C#  D   D#  E   F   F#  G   G#  A   A#  B
 | Just detect a key | Open `scale-detector.html` in Chrome, drop any audio file |
 | Analyze a YouTube song | Run `python server.py`, paste the URL |
 | Pitch shift the audio | Hit **+** or **−** after analyzing — audio actually shifts |
-| Use the live demo | [ronanlucky.github.io/scale-detector](https://ronanlucky.github.io/scale-detector) (file upload only) |
+| Use the live demo | [ronankongala.github.io/scale-detector](https://ronankongala.github.io/scale-detector) (file upload only) |
 
 ---
 
 ## Setup
 
 ```bash
-git clone https://github.com/ronanlucky/scale-detector
+git clone https://github.com/ronankongala/scale-detector
 cd scale-detector
 python server.py        # auto-installs yt-dlp, ffmpeg, librosa
 ```
@@ -68,4 +68,4 @@ Krumhansl-Schmuckler profiles  →  Pearson correlation × 24 keys
 
 ---
 
-Built by [Ronan Kongala](https://ronanlucky.github.io) · MS Cybersecurity @ Northeastern
+Built by [Ronan Kongala](https://ronankongala.github.io) · MS Cybersecurity @ Northeastern
